@@ -9,7 +9,7 @@ PROJECT_ROOT = BASE_DIR.parent
 
 DB_PATH = os.getenv("DB_PATH", str(PROJECT_ROOT / "rfp_evaluator.db"))
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
-COHERE_MODEL = os.getenv("COHERE_MODEL", "command-a-plus")
+COHERE_MODEL = os.getenv("COHERE_MODEL", "command-a-plus-05-2026")
 
 if not COHERE_API_KEY:
     raise RuntimeError(
